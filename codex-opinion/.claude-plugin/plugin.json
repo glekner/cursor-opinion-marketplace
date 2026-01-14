@@ -1,0 +1,9 @@
+{
+  "name": "codex-opinion",
+  "version": "1.0.0",
+  "description": "Get OpenAI Codex's opinion, delegate code changes, and request code reviews during Claude Code conversations",
+  "author": {
+    "name": "Gilad Lekner",
+    "email": "gilad.lekner@wiz.io"
+  }
+}

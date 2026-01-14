@@ -1,8 +1,8 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "cursor-opinion-marketplace",
-  "version": "1.1.0",
-  "description": "Private marketplace for Cursor Opinion plugin",
+  "version": "1.2.0",
+  "description": "Private marketplace for AI second opinion plugins (Cursor, Codex)",
   "owner": {
     "name": "Gilad Lekner",
     "email": "gilad.lekner@wiz.io"
@@ -17,6 +17,17 @@
         "email": "gilad.lekner@wiz.io"
       },
       "source": "./cursor-opinion",
+      "category": "productivity"
+    },
+    {
+      "name": "codex-opinion",
+      "description": "Get OpenAI Codex's opinion, delegate code changes, and request code reviews during Claude Code conversations",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gilad Lekner",
+        "email": "gilad.lekner@wiz.io"
+      },
+      "source": "./codex-opinion",
       "category": "productivity"
     }
   ]
