@@ -5,8 +5,7 @@
 # Usage: echo "diff content" | ./review-cursor.sh
 #    or: ./review-cursor.sh "diff content"
 #
-# Environment variables:
-#   CURSOR_API_KEY     - Your Cursor API key (required)
+# Environment variables (optional):
 #   CURSOR_MODEL       - Model to use (default: claude-sonnet-4-20250514)
 #
 
@@ -24,14 +23,6 @@ fi
 
 if [ -z "$DIFF_CONTENT" ]; then
     echo "Error: No diff content provided" >&2
-    exit 1
-fi
-
-# Check for API key
-if [ -z "$CURSOR_API_KEY" ]; then
-    echo "Error: CURSOR_API_KEY environment variable is not set" >&2
-    echo "Please set it in your shell profile (~/.zshrc or ~/.bashrc):" >&2
-    echo "  export CURSOR_API_KEY='your-api-key-here'" >&2
     exit 1
 fi
 
@@ -62,7 +53,6 @@ Provide your code review:"
 
 # Call cursor agent in READ-ONLY mode (no --force, no --sandbox disabled)
 agent -p "$REVIEW_PROMPT" \
-    --api-key "$CURSOR_API_KEY" \
     --model "$CURSOR_MODEL" \
     --output-format text \
     --approve-mcps

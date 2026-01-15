@@ -58,6 +58,5 @@ When calling Bash, you MUST set a long timeout:
 ## Notes
 
 - **The command will take several minutes** - this is expected, be patient
-- If the command fails due to missing CURSOR_API_KEY, inform the user they need to set it in their shell profile
-- If the `agent` command is not found, they need to install the Cursor CLI
+- If the `agent` command is not found, inform the user they need to install the Cursor CLI
 - Always be transparent that this is Cursor's opinion, not your own

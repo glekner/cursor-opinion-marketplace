@@ -75,4 +75,4 @@ Please provide your analysis and recommendations. Consider:
 - Always inform the user that you're consulting Cursor for additional input
 - Be transparent about when opinions differ between Claude and Cursor
 - Use Cursor's response as additional context, not as the sole authority
-- If the script fails (missing API key, CLI not installed), inform the user of the setup requirements
+- If the script fails (CLI not installed), inform the user they need to install the Cursor CLI

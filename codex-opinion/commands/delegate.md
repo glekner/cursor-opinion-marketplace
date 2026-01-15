@@ -59,5 +59,4 @@ When calling Bash, you MUST set a long timeout:
 - Codex has full write permissions via `--full-auto` mode - it can create, modify, and delete files
 - The task may take several minutes to complete
 - Review Codex's changes after completion - you can use Read/Glob to inspect
-- If the `codex` command is not found, they need to install the Codex CLI (`npm install -g @openai/codex`)
-- If auth fails, they need to configure their provider in `~/.codex/config.toml`
+- If the `codex` command is not found, inform the user they need to install the Codex CLI (`npm install -g @openai/codex`)

@@ -61,5 +61,4 @@ When calling Bash, you MUST set a long timeout:
 - This is a read-only operation - Codex cannot modify files
 - The review focuses on practical issues: bugs, security, quality
 - If the diff is very large, warn that the review may be incomplete or take longer
-- If the `codex` command is not found, they need to install the Codex CLI (`npm install -g @openai/codex`)
-- If auth fails, they need to configure their provider in `~/.codex/config.toml`
+- If the `codex` command is not found, inform the user they need to install the Codex CLI (`npm install -g @openai/codex`)

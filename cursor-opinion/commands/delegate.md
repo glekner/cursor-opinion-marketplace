@@ -59,5 +59,4 @@ When calling Bash, you MUST set a long timeout:
 - Cursor has full write permissions - it can create, modify, and delete files
 - The task may take several minutes to complete
 - Review Cursor's changes after completion - you can use Read/Glob to inspect
-- If the command fails due to missing CURSOR_API_KEY, inform the user they need to set it
-- If the `agent` command is not found, they need to install the Cursor CLI
+- If the `agent` command is not found, inform the user they need to install the Cursor CLI

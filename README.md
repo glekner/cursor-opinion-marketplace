@@ -25,13 +25,11 @@ Delegate questions to Cursor AI agent for a second opinion during your Claude Co
 - `/review` - Send git diff to Cursor for code review
 
 **Prerequisites:**
-1. Cursor CLI (`agent` command) installed and in PATH
-2. `CURSOR_API_KEY` environment variable set
+- Cursor CLI (`agent` command) installed and in PATH
 
-**Configuration (in `~/.zshrc` or `~/.bashrc`):**
+**Optional model override:**
 ```bash
-export CURSOR_API_KEY='your-api-key-here'
-export CURSOR_MODEL='claude-sonnet-4-20250514'  # optional, this is the default
+export CURSOR_MODEL='claude-sonnet-4-20250514'  # default model
 ```
 
 ---
@@ -46,12 +44,11 @@ Delegate questions to OpenAI Codex CLI for a second opinion during your Claude C
 - `/review` - Send git diff to Codex for code review
 
 **Prerequisites:**
-1. Codex CLI installed: `npm install -g @openai/codex`
-2. Codex CLI configured with your provider in `~/.codex/config.toml`
+- Codex CLI installed: `npm install -g @openai/codex`
 
-**Optional environment variable:**
+**Optional model override:**
 ```bash
-export CODEX_MODEL='gpt-4o'  # override model from config
+export CODEX_MODEL='gpt-4o'  # override default model
 ```
 
 ---

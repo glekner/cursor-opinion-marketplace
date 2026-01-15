@@ -53,7 +53,7 @@ ccli-opinion-marketplace/
 
 - **Timeout requirement**: Cursor uses a slow-thinking model. All Bash calls to scripts must use `timeout: 600000` (10 minutes).
 - **Working directory for /delegate**: Uses `--workspace $(pwd)` to ensure Cursor operates in user's project, not plugin root.
-- **Environment variables**: Plugin requires `CURSOR_API_KEY`. Optional: `CURSOR_MODEL` (default: claude-sonnet-4-20250514).
+- **Environment variables**: Optional `CURSOR_MODEL` to override the default model (claude-sonnet-4-20250514).
 - **Script execution**: Scripts use `${CLAUDE_PLUGIN_ROOT}/scripts/*.sh` path variable provided by Claude Code plugin system.
 - **Command arguments**: Use `argument-hint` in YAML frontmatter for optional args; access via `$ARGUMENTS` or `$1`, `$2`.
 

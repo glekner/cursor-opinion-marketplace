@@ -58,6 +58,5 @@ When calling Bash, you MUST set a long timeout:
 ## Notes
 
 - **The command will take several minutes** - this is expected, be patient
-- If the `codex` command is not found, they need to install the Codex CLI (`npm install -g @openai/codex`)
-- If auth fails, they need to configure their provider in `~/.codex/config.toml`
+- If the `codex` command is not found, inform the user they need to install the Codex CLI (`npm install -g @openai/codex`)
 - Always be transparent that this is Codex's opinion, not your own

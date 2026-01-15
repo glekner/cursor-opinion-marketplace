@@ -61,5 +61,4 @@ When calling Bash, you MUST set a long timeout:
 - This is a read-only operation - Cursor cannot modify files
 - The review focuses on practical issues: bugs, security, quality
 - If the diff is very large, warn that the review may be incomplete or take longer
-- If the command fails due to missing CURSOR_API_KEY, inform the user they need to set it
-- If the `agent` command is not found, they need to install the Cursor CLI
+- If the `agent` command is not found, inform the user they need to install the Cursor CLI
