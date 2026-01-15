@@ -6,13 +6,13 @@
 #    or: ./review-cursor.sh "diff content"
 #
 # Environment variables (optional):
-#   CURSOR_MODEL       - Model to use (default: claude-sonnet-4-20250514)
+#   CURSOR_MODEL       - Model to use (default: gpt-5.2-codex)
 #
 
 set -e
 
 # Configuration with defaults
-CURSOR_MODEL="${CURSOR_MODEL:-claude-sonnet-4-20250514}"
+CURSOR_MODEL="${CURSOR_MODEL:-gpt-5.2-codex}"
 
 # Get diff from argument or stdin
 if [ -n "$1" ]; then

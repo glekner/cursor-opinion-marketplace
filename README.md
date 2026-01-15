@@ -29,7 +29,7 @@ Delegate questions to Cursor AI agent for a second opinion during your Claude Co
 
 **Optional model override:**
 ```bash
-export CURSOR_MODEL='claude-sonnet-4-20250514'  # default model
+export CURSOR_MODEL='gpt-5.2-codex'  # default model
 ```
 
 ---
@@ -48,7 +48,7 @@ Delegate questions to OpenAI Codex CLI for a second opinion during your Claude C
 
 **Optional model override:**
 ```bash
-export CODEX_MODEL='gpt-4o'  # override default model
+export CODEX_MODEL='gpt-5.2-high'  # default model
 ```
 
 ---

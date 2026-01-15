@@ -63,7 +63,7 @@ Optional environment variables:
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `CURSOR_MODEL` | `claude-sonnet-4-20250514` | Override the model Cursor uses |
+| `CURSOR_MODEL` | `gpt-5.2-codex` | Override the model Cursor uses |
 
 ## Plugin Structure
 

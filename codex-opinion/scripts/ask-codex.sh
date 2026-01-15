@@ -6,10 +6,13 @@
 #    or: ./ask-codex.sh "your prompt"
 #
 # Environment variables (optional):
-#   CODEX_MODEL - Model to use (uses Codex config default)
+#   CODEX_MODEL - Model to use (default: gpt-5.2-high)
 #
 
 set -e
+
+# Configuration with defaults
+CODEX_MODEL="${CODEX_MODEL:-gpt-5.2-high}"
 
 # Get prompt from argument or stdin
 if [ -n "$1" ]; then
@@ -33,10 +36,8 @@ fi
 # Build command args
 CMD_ARGS=("exec")
 
-# Add model if specified
-if [ -n "$CODEX_MODEL" ]; then
-    CMD_ARGS+=("--model" "$CODEX_MODEL")
-fi
+# Add model
+CMD_ARGS+=("--model" "$CODEX_MODEL")
 
 # Use yolo mode for non-interactive execution (no approval prompts)
 # with read-only sandbox for safety
