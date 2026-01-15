@@ -1,6 +1,6 @@
 # Cursor Opinion Plugin
 
-A private Claude Code plugin that lets you get a second opinion from Cursor AI during your conversation with Claude.
+A Claude Code plugin that lets you get a second opinion from Cursor AI during your conversation with Claude.
 
 ## Features
 

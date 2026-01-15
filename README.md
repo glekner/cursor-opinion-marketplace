@@ -1,6 +1,6 @@
 # AI Opinion Marketplace
 
-A private Claude Code plugin marketplace containing plugins for getting second opinions from other AI coding assistants.
+A Claude Code plugin marketplace containing plugins for getting second opinions from other AI coding assistants.
 
 ## Installation
 
@@ -87,4 +87,4 @@ Claude will gather context, consult the external AI, and synthesize both opinion
 
 ## License
 
-Private use only.
+MIT License
